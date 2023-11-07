@@ -15,8 +15,8 @@ const getSensores = async (req: Request, res: Response) => {
   }
 const createSensores = async (req: Request, res: Response) => {
     try {
-      const Sensores = await sensoresService.createSensores(req.body);
-      res.send(Sensores);
+      const sensores = await sensoresService.createSensores(req.body);
+      res.send(sensores);
     } catch (error) {
       handleHttp(res, 500, "ERROR TO CREATE SENSORES");
     }

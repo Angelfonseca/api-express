@@ -21,9 +21,6 @@ const SensoresSchema = new Schema<Sensores>(
         
     }
     },
-  {
-    timestamps: true
-  }
 )
 
 const SensoresModel = model("sensores", SensoresSchema) 
