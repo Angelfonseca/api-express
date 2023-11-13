@@ -1,6 +1,6 @@
 import { Schema, model } from "mongoose"
 import { User } from '../interfaces/user.interface'
-const bcrypt = require('bcrypt')
+const bcrypt = require('bcryptjs')
 
 const SALT_WORK_FACTOR = 10;
 
