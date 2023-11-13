@@ -1,7 +1,7 @@
 import { Schema, model } from "mongoose"
-import { Sensores } from '../interfaces/sensores.interface'
+import { Sensor } from '../interfaces/sensores.interface'
 
-const SensoresSchema = new Schema<Sensores>(
+const SensoresSchema = new Schema<Sensor>(
   {
     sens_temp: {
       type: Number,
@@ -14,13 +14,11 @@ const SensoresSchema = new Schema<Sensores>(
     sens_soilh: {
       type: Number,
       required: true
-    },
-    date: {
-        type: Date,
-        required: true
-        
     }
-    },
+  },
+  {
+    timestamps: true
+  }
 )
 
 const SensoresModel = model("sensores", SensoresSchema) 

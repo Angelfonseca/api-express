@@ -1,9 +1,9 @@
 import { User } from './user.interface'
-import { Sensores } from './sensores.interface'
+import { Sensor } from './sensores.interface'
 
 export interface Sistema {
     user: User
-    sensores: Sensores
+    sensor: Sensor
     place: string
   }
   

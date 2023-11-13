@@ -4,7 +4,7 @@ import ensureAuth from '../middlewares/auth.middleware'
 
 const router = Router()
 
-router.get('/', ensureAuth, controller.getSistema)
+router.get('/', controller.getSistema)
 router.post('/', controller.createsistema_riego)
 
 export default router

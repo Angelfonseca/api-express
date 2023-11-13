@@ -4,7 +4,7 @@ import ensureAuth from '../middlewares/auth.middleware'
 
 const router = Router()
 
-router.get('/', ensureAuth, controller.getUsers)
+router.get('/', controller.getUsers)
 router.post('/', controller.createUser)
 router.post('/auth/login', controller.login)
 

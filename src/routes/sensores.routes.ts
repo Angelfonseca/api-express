@@ -4,7 +4,7 @@ import ensureAuth from '../middlewares/auth.middleware'
 
 const router = Router()
 
-router.get('/', ensureAuth, controller.getSensores)
+router.get('/', controller.getSensores)
 router.post('/', controller.createSensores)
 
 export default router

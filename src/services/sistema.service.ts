@@ -4,7 +4,7 @@ import { handleHttp } from "../utils/error.handle";
 
 const getSistema = async () => {
   //con populate haces que traiga la relacion de la otra coleccion pueden ir n populates('aasdf').populate('asdfas)-.......
-  const sistema = await SistemaModel.find().populate('user').populate('sensores');
+  const sistema = await SistemaModel.find().populate('user').populate('sensor');
   return sistema;
 };
 
