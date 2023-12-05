@@ -4,6 +4,5 @@ import { Sensor } from './sensores.interface'
 export interface Sistema {
     user: User
     sensor: Sensor
-    place: string
   }
   

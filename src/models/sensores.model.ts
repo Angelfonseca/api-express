@@ -14,8 +14,13 @@ const SensoresSchema = new Schema<Sensor>(
     sens_soilh: {
       type: Number,
       required: true
-    }
+    },
+    place: {
+      type: String,
+      required: true,
+      unique: true
   },
+},
   {
     timestamps: true
   }

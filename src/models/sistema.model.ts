@@ -4,11 +4,7 @@ import { Sistema } from "../interfaces/sistema.interface"
 const sistemaSchema = new Schema<Sistema>(
   {
     user: { type: Schema.Types.ObjectId, ref: 'user' },
-    sensor: { type: Schema.Types.ObjectId, ref: 'sensores' },
-    place: {
-      type: String,
-      required: true
-    }
+    sensor: { type: Schema.Types.ObjectId, ref: 'sensores' }
 },
 {
   timestamps: true

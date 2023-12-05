@@ -1,16 +1,21 @@
-import { Sensor } from "../interfaces/sensores.interface";
+
+import axios, { AxiosResponse } from 'axios';
 import SensoresModel from "../models/sensores.model";
-import { handleHttp } from "../utils/error.handle";
+import { Sensor } from "../interfaces/sensores.interface";
+
 
 const getSensores = async () => {
-    const sensores = await SensoresModel.find();
-    return sensores;
-  };
+  const sensores = await SensoresModel.find();
+  return sensores;
+};
+
 const createSensores = async (sensor: Sensor) => {
-    const sensorData = await SensoresModel.create(sensor)
-    return sensorData;
-  }
-  export default {
-    getSensores,
-    createSensores
-  };
+  const sensorData = await SensoresModel.create(sensor);
+  return sensorData;
+};
+
+
+export default {
+  getSensores,
+  createSensores
+};

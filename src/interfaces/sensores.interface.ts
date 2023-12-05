@@ -3,5 +3,6 @@ export interface Sensor {
     sens_soilh: number
     sens_hum: number
     date: Date
+    place: string
   }
   
