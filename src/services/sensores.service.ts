@@ -10,8 +10,13 @@ const getSensores = async () => {
 };
 
 const createSensores = async (sensor: Sensor) => {
-  const sensorData = await SensoresModel.create(sensor);
-  return sensorData;
+  try {
+    const sensorData = await SensoresModel.create(sensor);
+    return sensorData;
+  } catch (error) {
+    console.error('Error creating sensor data:', error);
+    throw error; // Rethrow the error or handle it accordingly
+  }
 };
 
 

@@ -4,6 +4,9 @@ import cors from 'cors';
 import bodyParser from 'body-parser'
 import db from "./config/db";
 
+
+
+
 //import routes
 import UsersRoutes from './routes/users.routes'
 import SistemaRoutes from './routes/sistema.routes'

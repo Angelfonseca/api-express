@@ -18,7 +18,6 @@ const SensoresSchema = new Schema<Sensor>(
     place: {
       type: String,
       required: true,
-      unique: true
   },
 },
   {
